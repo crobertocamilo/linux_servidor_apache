@@ -43,4 +43,21 @@ Para executar o *script.sh* adequado:
   
   `./script.sh`
 
+---
+### Lançando uma instância EC2 com o servidor apache já instalado
+
+Ao lançar uma máquina no EC2 é possível incluir um *script* de personalização da instância. 
+
+Para criar uma instância EC2 que já realiza a instalação e configuração do httpd (Apache) e disponibilize a página HTML ao iniciar, copie o [scrip_aws.sh](https://github.com/crobertocamilo/linux_servidor_apache/blob/main/script_aws.sh) para janela **Advanced details**, na seção **User data** da interface de configuração da instância. 
+
+Neste caso, seu servidor *web* já estará *online* após a inicialização da máquina. Basta acessar a página diretamente pelo IPv4 público da instância!
+
+<div align="center">
+  <img src="https://github.com/crobertocamilo/linux_servidor_apache/blob/main/assets/pagina_online_aws.png?raw=true" alt="Pagina html online numa instancia EC2" width=100%/>
+</div>
+
+<div align="center">
+Página HTML personalizada sendo exibida a partir do servido *web* criado numa instância EC2 na AWS.
+</div>
+
 
